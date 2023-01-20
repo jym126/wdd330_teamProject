@@ -5,6 +5,15 @@ export function qs(selector, parent = document) {
 // or a more concise version if you are into that sort of thing:
 // export const qs = (selector, parent = document) => parent.querySelector(selector);
 
+export function getParam(param){
+  const queryString =window.location.search;
+  const urlParam =new URLSearchParams(queryString);
+  const parameter= urlParam.get(param);
+  return parameter;
+
+}
+
+
 // retrieve data from localstorage
 export function getLocalStorage(key) {
   return JSON.parse(localStorage.getItem(key));
