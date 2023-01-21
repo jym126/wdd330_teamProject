@@ -2,7 +2,7 @@ import { getLocalStorage } from "./utils.mjs";
 
 function renderCartContents() {
   const cartItems = getLocalStorage("so-cart");
-  const htmlItems = [cartItems].map((item) => cartItemTemplate(item));
+  const htmlItems = [cartItems].map((item) => cartItemTemplate(item));//map function dont work on objects only arrays, so I converted cartItems into array
   document.querySelector(".product-list").innerHTML = htmlItems.join("");
 }
 
@@ -26,3 +26,4 @@ function cartItemTemplate(item) {
 }
 
 renderCartContents();
+
