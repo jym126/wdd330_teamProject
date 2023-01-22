@@ -4,8 +4,8 @@
   "description": "Boilerplate for WDD 330 SleepOutside project",
   "main": "main.js",
   "scripts": {
-    "start": "netlify-lambda serve functions",
-    "build": "netlify-lambda build functions",
+    "start": "vite",
+    "build": "vite build --emptyOutDir",
     "lint": "eslint *.js src/**/*.js",
     "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
     "test": "jest"
@@ -31,8 +31,5 @@
     "last 3 opera versions",
     "last 3 ios_saf versions",
     "last 3 safari versions"
-  ],
-  "dependencies": {
-    "netlify-lambda": "^2.0.15"
-  }
+  ]
 }
