@@ -1,12 +1,14 @@
-export default class ProductList{
-    constructor(category,dataSource,elementList)
-    {
-        this.category=category;
-        this.dataSource=dataSource;
-        this.elementList=elementList;
-
+export default class ProductListing {
+    constructor(category, dataSource, listElement) {
+      // We passed in this information to make our class as reusable as possible.
+      // Being able to define these things when we use the class will make it very flexible
+      this.category = category;
+      this.dataSource = dataSource;
+      this.listElement = listElement;
     }
-}
-
-const list = new ProductList(category,dataSource,elementList);
-
+    async init() {
+      // our dataSource will return a Promise...so we can use await to resolve it.
+      const list = await this.dataSource.getData();
+      // render the list 
+    }
+  }
