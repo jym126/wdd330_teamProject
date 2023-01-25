@@ -14,7 +14,7 @@ function productDetailsTemplate(product) {
     ${product.DescriptionHtmlSimple}
     </p>
     <div class="product-detail__add">
-      <button id="addToCart" data-id="${product.Id}">Add to Cart</button>
+      <button id="addToCart" data-id="${product.Id}"><a href="cart/index.html"></a>Add to Cart</button>
     </div></section>`;
 }
 
@@ -34,6 +34,7 @@ export default class ProductDetails {
     document
       .getElementById("addToCart")
       .addEventListener("click", this.addToCart.bind(this));
+      
   }
   addToCart() {
     setLocalStorage("so-cart", this.product);
