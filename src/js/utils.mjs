@@ -6,9 +6,9 @@ export function qs(selector, parent = document) {
 // export const qs = (selector, parent = document) => parent.querySelector(selector);
 
 export function getParam(param){
-  const queryString =window.location.search;
-  const urlParam =new URLSearchParams(queryString);
-  const parameter= urlParam.get(param);
+  const queryString = window.location.search;
+  const urlParam = new URLSearchParams(queryString);
+  const parameter = urlParam.get(param);
   return parameter;
 
 }
@@ -24,9 +24,9 @@ export function setLocalStorage(key, data) {
 }
 // set a listener for both touchend and click
 export function setClick(selector, callback) {
-  qs(selector).addEventListener("touchend", (event) => {
+  qs(selector).addEventListener('touchend', (event) => {
     event.preventDefault();
     callback();
   });
-  qs(selector).addEventListener("click", callback);
+  qs(selector).addEventListener('click', callback);
 }
