@@ -23,7 +23,7 @@ export default class shoppingCart {
         alt="${item.Name}"
       />
     </a>
-    <a href="#">
+    <a href="../product_pages/index.html?product=${item.Id}" class="cart-card__image">
       <h2 class="card__name">${item.Name}</h2>
     </a>
     <p class="cart-card__color">${item.Colors[0].ColorName}</p>
