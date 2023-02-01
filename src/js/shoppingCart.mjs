@@ -17,7 +17,7 @@ export default class shoppingCart {
 
   function cartItemTemplate(item) {
     const newItem = `<li class="cart-card divider">
-    <a href="../product_pages/index.html?product=${item.Id}" class="cart-card__image">
+    <a href="#">
       <img
         src="${item.Image}"
         alt="${item.Name}"
