@@ -35,9 +35,11 @@ export default class ProductDetails {
       .getElementById('addToCart')
       .addEventListener('click', this.addToCart.bind(this));
   }
+
   addToCart() {
     setLocalStorage('so-cart', this.product);
   }
+
   renderProductDetails(selector) {
     const element = document.querySelector(selector);
     element.insertAdjacentHTML(
