@@ -202,6 +202,30 @@ button {
   grid-column: 3;
 }
 
+/* Style of categories */
+
+.categories{
+  display: grid;
+  max-width: 800px;
+  margin: 45px auto;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.categories img {
+  max-width: 100%;
+  display: block;
+  width: 120px;
+  margin: 0;
+  padding: 0;
+}
+
+.cat-elements  {
+  display: flex;
+  width: 100px;
+}
+
+
 @media screen and (min-width: 500px) {
   body {
     max-width: 1080px;
