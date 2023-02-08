@@ -1,3 +1,4 @@
+import ProductList from './ProductList.mjs';
 import {getLocalStorage} from './utils.mjs';
 
 
@@ -19,7 +20,7 @@ export default class shoppingCart {
     const newItem = `<li class="cart-card divider">
     <a href="#">
       <img
-        src="${item.Image}"
+        src="${item.Images.PrimarySmall}"
         alt="${item.Name}"
       />
     </a>

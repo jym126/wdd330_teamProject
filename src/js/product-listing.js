@@ -8,6 +8,7 @@ const dataSource = new ProductData();
 // console.log(dataSource.getData());
 const category = getParam('category');
 // first create an instance of our ProductData class.
+document.getElementById('title').innerHTML = `Top products: ${category}`;
 
 const element = document.querySelector('.product-list');
 const productsList = new ProductList(category, dataSource, element);
