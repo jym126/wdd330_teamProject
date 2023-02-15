@@ -1,17 +1,5 @@
-// takes the items currently stored in the cart (localstorage) and returns them in a simplified form.
-function packageItems(items) {
-    // convert the list of products from localStorage to the simpler form required for the checkout process. Array.map would be perfect for this.
-    }
-    
-    export default class CheckoutProcess {
-      ...
-    
-      async checkout(form) {
-        // build the data object from the calculated fields, the items in the cart, and the information entered into the form
-    
-        // call the checkout method in our ExternalServices module and send it our data object.
-      }
-    }
+import { getLocalStorage, loadHeaderFooter } from './utils.mjs';
+
 
 
 export default class CheckoutProcess {

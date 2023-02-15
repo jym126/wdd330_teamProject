@@ -1,10 +1,10 @@
-import ProductData from './ProductData.mjs';
+import ExternalServices from './ExternalServices.mjs';
 import ProductList from './ProductList.mjs';
 
 // 5  Update main.js. Import in loadHeaderFooter and then use that function to load the header and footer into src/index.html
 import { loadHeaderFooter } from './utils.mjs';
 
-const dataSource = new ProductData('tents');
+const dataSource = new ExternalServices('tents');
 // console.log(dataSource.getData());
 
 const element = document.querySelector('.product-list');

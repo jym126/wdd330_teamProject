@@ -1,4 +1,5 @@
-const baseURL = 'https://wdd330-backend.onrender.com/'
+// const baseURL = 'https://wdd330-backend.onrender.com/'
+const baseURL = 'http://server-nodejs.cit.byui.edu:3000/checkout'
 
 function convertToJson(res) {
   if (res.ok) {
@@ -8,7 +9,7 @@ function convertToJson(res) {
   }
 }
 
-export default class ProductData {
+export default class ExternalServices {
   // constructor(category) {
   //   this.category = category;
   //   this.path = `../json/${this.category}.json`;
