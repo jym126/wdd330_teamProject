@@ -244,3 +244,68 @@ footer {
   font-size: var(--small-font);
   padding: 1em;
 }
+
+/*checkout-button*/
+.checkout-button {
+  width: 120px;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #A4B8C4;
+  border-radius: 1rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.checkout-button:hover {
+  background-color: #7996a8;
+}
+
+.checkout-button:active {
+  background-color: #465d6b;
+  color: white;
+}
+
+/* FORM */
+.form-products {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-products h2 {
+  text-align: center;
+}
+
+fieldset {
+  background-image: linear-gradient(to right, #A4B8C4 , #ccc);
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 3rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+input[type=text],
+input[type=number],
+input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
