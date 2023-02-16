@@ -17,3 +17,7 @@ const productsList = new ProductList(category, dataSource, element);
 productsList.init();
 // 5
 loadHeaderFooter();
+
+const listing = new ProductList(category, dataSource, element);
+
+listing.init();

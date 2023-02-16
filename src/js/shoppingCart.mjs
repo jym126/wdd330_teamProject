@@ -6,12 +6,24 @@ export default class shoppingCart {
     constructor(key, selector) {
         this.key = key;
         this.selector = selector;
+        this.total = 0;
     }
 
+    async init() {
+      const list = getLocalStorage(this.key);
+      this.calculateListTotal(list);
+      this.renderCartContents(list);
+    }
+    calculateListTotal(list) {
+      const amounts = [list].map((item) => item.FinalPrice);
+      this.total = amounts.reduce((sum, item) => sum + item);
+    }
+  
     renderCartContents() {
         const cartItems = getLocalStorage(this.key);
         const htmlItems = [cartItems].map((item) => cartItemTemplate(item));
         document.querySelector(this.selector).innerHTML = htmlItems.join('');
+        document.querySelector('.list-total').innerText += ` $${this.total}`;
     }
 }
 
