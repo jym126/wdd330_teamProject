@@ -1,7 +1,4 @@
-<<<<<<< HEAD:src/js/ExternalServices.mjs
 // const baseURL = 'https://wdd330-backend.onrender.com/'
-=======
->>>>>>> 38e11e1fb8deab22bc4674fe0d5688e1220a2c45:src/js/ProductData.mjs
 const baseURL = 'https://wdd330-backend.onrender.com/'
 
 function convertToJson(res) {
