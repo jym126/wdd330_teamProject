@@ -1,4 +1,8 @@
-import { getLocalStorage } from './utils.mjs';
+import {
+  getLocalStorage,
+  setLocalStorage, 
+  alertMessage 
+} from './utils.mjs';
 import ExternalServices from './ExternalServices.mjs';
 
 const services = new ExternalServices();
@@ -79,7 +83,7 @@ export default class CheckoutProcess {
     orderTotal.innerText = '$' + this.orderTotal;
   }
   async checkout() {
-    const formElement = document.forms['checkout'];
+    const formElement = document.forms[0];
 
     const json = formDataToJSON(formElement);
     // add totals, and item details
@@ -88,12 +92,18 @@ export default class CheckoutProcess {
     json.tax = this.tax;
     json.shipping = this.shipping;
     json.items = packageItems([this.list]);
-    // console.log(json);
+
     try {
       const res = await services.checkout(json);
-      console.log(res);
+      location.assign('../checkout/success.html');
+      setLocalStorage('so-cart', {});
     } catch (err) {
-      console.log(err);
+      const error = err.message;
+      console.log(error);
+      Object.values(error).forEach((e)=>{
+        alertMessage(e);
+      })
+      console.log(err.message);
     }
   }
 }
