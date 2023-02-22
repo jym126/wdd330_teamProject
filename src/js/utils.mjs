@@ -95,7 +95,7 @@ export function renderListWithTemplate(
       alert.innerHTML = `<h3>${message}</h3><span>X</span>`;
       setTimeout(() => {
         alert.remove()
-      }, 3000);
+      }, 6000);
       // add a listener to the alert to see if they clicked on the X
   
       // if they did then remove the child
