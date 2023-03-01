@@ -85,7 +85,7 @@ button {
   padding: 0.5em 2em;
   background-color: var(--secondary-color);
   color: white;
-  margin: auto;
+  margin: 2rem auto;
   display: block;
   border: 0;
   font-size: var(--large-font);
@@ -100,6 +100,10 @@ button {
 
 /* Cart icon styles */
 .cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 5rem;
   padding-top: 1em;
   position: relative;
   text-align: center;
@@ -275,12 +279,12 @@ footer {
 }
 
 /* FORM */
-.form-products {
+.form-products, .form-admin {
   max-width: 500px;
   margin: 0 auto;
 }
 
-.form-products h2 {
+.form-products h2, .form-admin h2 {
   text-align: center;
 }
 
@@ -304,7 +308,9 @@ legend {
 
 input[type=text],
 input[type=number],
-input[type=date] {
+input[type=date],
+input[type=email],
+input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -334,4 +340,39 @@ input[type=date] {
 .alert span {
   width: 3rem;
   cursor: pointer;
+}
+
+/* W09 */
+/* Orders */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 5rem auto;
+  height: 345px;
+}
+
+
+
+#orders {
+  text-align: center;
+  background-color: #ccc;
+  width: 18rem;
+  height: 7rem;
+}
+
+/* Logo Img*/
+.linkLogin {
+  margin: 0;
+  padding: 0;
+}
+.logoImg {
+  width: 2rem;
+}
+
+.logoImg:hover {
+  opacity: 0.5;
 }

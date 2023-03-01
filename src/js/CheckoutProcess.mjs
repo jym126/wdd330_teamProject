@@ -1,7 +1,7 @@
 import {
   getLocalStorage,
-  setLocalStorage, 
-  alertMessage 
+  setLocalStorage,
+  alertMessage
 } from './utils.mjs';
 import ExternalServices from './ExternalServices.mjs';
 

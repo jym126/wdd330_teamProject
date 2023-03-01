@@ -100,7 +100,7 @@ export function renderListWithTemplate(
   
       // if they did then remove the child
       alert.addEventListener('click', function(e) {
-          if( alert) { // how can we tell if they clicked on our X or on something else?  hint: check out e.target.tagName or e.target.innerText
+          if(alert) { // how can we tell if they clicked on our X or on something else?  hint: check out e.target.tagName or e.target.innerText
             main.removeChild(this);
           }
       })
