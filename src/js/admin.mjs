@@ -62,7 +62,7 @@ export default class Admin {
         <section class="form-admin">
         <h2>Login to Access the Admin Page</h2>
         <form
-        id="checkout"
+        id="checkout2"
         name="checkuot"
         action="#"
         >

@@ -81,6 +81,17 @@ header {
   color: var(--tertiary-color);
 }
 
+#checkout {
+  margin-top: 2em;
+}
+
+#main-footer {
+  margin-top: 90em;
+}
+
+.form-products h2 {
+  margin-top: 45em;
+}
 button {
   padding: 0.5em 2em;
   background-color: var(--secondary-color);
